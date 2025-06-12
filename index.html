@@ -22,6 +22,13 @@
       --navy:          #003A6B;
     }
 
+    @font-face {
+  font-family: 'ElefontSC';
+  src: url('/fonts/Elefont SC Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
     /*======================= RESET & BASE =======================*/
     *{box-sizing:border-box;margin:0;padding:0}
     body{background:var(--navy);color:var(--text-dark);font-family:Arial,Helvetica,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -99,13 +106,19 @@
       position:relative;
     }
     
-    .book-title{
-      font-size:2.25rem;
-      line-height:1.2;
-      margin:0.5rem 0;
-      text-align:center;
-      font-weight:bold;
-    }
+    .book-title .learn,
+.book-title .ease {
+  color: var(--yellow);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;    /* più piccolo di AMERICAN MAH JONGG */
+  line-height: 1.2;
+}
+
+.book-title .american {
+  font-family: 'ElefontSC', serif;
+  font-size: 3rem;       /* scegli la dimensione che replica la copertina */
+  line-height: 1.1;
+}
     
     .sub-title{
       font-size:1.25rem;
@@ -599,7 +612,11 @@
         </div>
       <div class="hero-wrapper">
         <div class="hero-text">
-          <h2 class="book-title">LEARN<br>AMERICAN MAH JONGG<br>WITH EASY</h2>
+          <h2 class="book-title">
+  <span class="learn">LEARN</span><br>
+  <span class="american">AMERICAN MAH JONGG</span><br>
+  <span class="ease">WITH EASE</span>
+         </h2>
           <p class="sub-title">Your Step-By-Step Begginer's Guide to Becoming Game-Ready in Days</p>
         </div>
       </div>
