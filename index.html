@@ -870,12 +870,21 @@ body {
 <div class="af-element">
 <label class="previewLabel" for="awf_field-118156078"></label>
 <div class="af-textWrap">
-<input id="awf_field-118156078" type="text" name="name" class="text" value="Your Full Name" onfocus=" if (this.value == 'Your Full Name') { this.value = ''; }" onblur="if (this.value == '') { this.value='Your Full Name';} " tabindex="500" />
-</div>
+<input id="awf_field-118156078"
+       type="text"
+       name="name"
+       class="text"
+       placeholder="Your First Name"
+       tabindex="500" /></div>
 <div class="af-clear"></div>
 </div><div class="af-element">
 <label class="previewLabel" for="awf_field-118156079"></label>
-<div class="af-textWrap"><input class="text" id="awf_field-118156079" type="email" name="email" value="Your Email Address" tabindex="501" onfocus=" if (this.value == 'Your Email Address') { this.value = ''; }" onblur="if (this.value == '') { this.value='Your Email Address';}" />
+<div class="af-textWrap"><input id="awf_field-118156079"
+       type="email"
+       name="email"
+       class="text"
+       placeholder="Your Email Address"
+       tabindex="501" />
 </div><div class="af-clear"></div>
 </div><div class="af-element buttonContainer">
 <input name="submit" class="submit" type="submit" value="SEND MY FREE BOOK" tabindex="502" />
@@ -926,8 +935,8 @@ body {
   /* submit button */
   #af-form-776188353 input.submit {
     width: 100%;
-    background:var(--yellow);                
-    color: #fff;
+    background:var(--yellow) !important;;                
+    color: #fff !important;
     border: none;
     padding: 1rem;
     font-size: 1.125rem;
