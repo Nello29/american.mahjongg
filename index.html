@@ -106,17 +106,30 @@
       position:relative;
     }
     
-    .book-title .learn,
+    .book-title {
+  text-align: center;
+  margin: 0;               /* azzera ogni margin extra di h2 */
+  padding: 0;              /* azzera padding se c’è */
+}
+
+/* 2) fa sì che ogni span stia su una riga a sé */
+.book-title span {
+  display: block;
+  margin: 0.2rem 0;        /* regola lo spazio verticale tra le righe */
+}
+
+/* 3) riapplica i font/colori già definiti */
+.book-title .learn,
 .book-title .ease {
   color: var(--yellow);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.75rem;    /* più piccolo di AMERICAN MAH JONGG */
+  font-size: 1.75rem;
   line-height: 1.2;
 }
 
 .book-title .american {
   font-family: 'ElefontSC', serif;
-  font-size: 3rem;       /* scegli la dimensione che replica la copertina */
+  font-size: 3rem;
   line-height: 1.1;
 }
     
@@ -613,8 +626,9 @@
       <div class="hero-wrapper">
         <div class="hero-text">
           <h2 class="book-title">
-  <span class="learn">LEARN</span><br>
-  <span class="american">AMERICAN MAH JONGG</span><br>
+  <span class="learn">LEARN</span>
+  <span class="american">AMERICAN</span>
+  <span class="american">MAH JONGG</span>
   <span class="ease">WITH EASE</span>
          </h2>
           <p class="sub-title">Your Step-By-Step Begginer's Guide to Becoming Game-Ready in Days</p>
