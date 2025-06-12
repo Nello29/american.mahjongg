@@ -108,11 +108,30 @@
     
     .book-title {
   text-align: center;
-  margin: 0;               /* azzera ogni margin extra di h2 */
-  padding: 0;              /* azzera padding se c’è */
+  position: relative;            
+  padding: 1rem 0;          
 }
 
-/* 2) fa sì che ogni span stia su una riga a sé */
+    /* linea sopra */
+.book-title::before {
+  content: "";
+  display: block;
+  width: 4rem;              /* lunghezza della lineetta */
+  height: 2px;              /* spessore della lineetta */
+  background: var(--navy);
+  margin: 0 auto 0.75rem;   /* 0 sopra, auto centri orizzontalmente, 0.75rem sotto */
+}
+
+/* linea sotto */
+.book-title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 2px;
+  background: var(--navy);
+  margin: 0.75rem auto 0;   /* 0.75rem sopra, auto centri orizzontalmente, 0 sotto */
+}
+    
 .book-title span {
   display: block;
   margin: 0.2rem 0;        /* regola lo spazio verticale tra le righe */
