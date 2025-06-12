@@ -223,67 +223,7 @@
       margin:1.5rem auto;
     }
     
- /*======================= MODIFICA FORM AWEBER =======================*/
-  /* wrapper: bianco + padding + flex layout */
-  #af-form-776188353 {
-    background-color: #fff;             /* sfondo “pulito” */
-    padding: 1rem;                      /* spazio interno */
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;                          /* distanza tra gli elementi */
-    border-radius: 6px;                 /* conserva il radius originario */
-    box-shadow: rgba(0,0,0,0.1) 0 2px 2px;
-    max-width: 418px;
-    margin: auto;
-  }
-
-  /* input fields */
-  #af-form-776188353 .af-body input.text {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    box-sizing: border-box;
-    /* rimuovi gli altri bordi e margin-top ereditati */
-    border-bottom: 1px solid #ccc !important;
-    border-left: 1px solid #ccc !important;
-    border-right: 1px solid #ccc !important;
-    margin-top: 0 !important;
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
-  }
-
-  /* placeholder (se vuoi passare a placeholder nativo invece del value-onfocus) */
-  #af-form-776188353 .af-body input.text::-webkit-input-placeholder { color: #999; }
-  #af-form-776188353 .af-body input.text:-ms-input-placeholder { color: #999; }
-  #af-form-776188353 .af-body input.text::placeholder { color: #999; }
-
-  /* submit button */
-  #af-form-776188353 input.submit {
-    width: 100%;
-    background: #FFA500;                /* arancione pieno */
-    color: #fff;
-    border: none;
-    padding: 1rem;
-    font-size: 1.125rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-top: 0 !important;           /* elimina eventuali margin spuria */
-  }
-  #af-form-776188353 input.submit:hover {
-    background: #e67e22;                /* arancione scuro al passaggio */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
-  }
-
-  /* rimuovi spazi extra intorno alle label “vuote” */
-  #af-form-776188353 .af-body .previewLabel {
-    display: none;
-  }
+ /*=======================  FORM  =======================*/
 
     .form-note{
       font-size:0.875rem;
@@ -945,6 +885,68 @@ body {
 </div>
 <div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=7OxsjBwczKzM" alt="" /></div>
 </form>
+
+          <!-- ============== MODIFICA AWEBER FORM ============== -->
+/* wrapper: bianco + padding + flex layout */
+  #af-form-776188353 {
+    background-color: #fff;             /* sfondo “pulito” */
+    padding: 1rem;                      /* spazio interno */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;                          /* distanza tra gli elementi */
+    border-radius: 6px;                 /* conserva il radius originario */
+    box-shadow: rgba(0,0,0,0.1) 0 2px 2px;
+    max-width: 418px;
+    margin: auto;
+  }
+
+  /* input fields */
+  #af-form-776188353 .af-body input.text {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* rimuovi gli altri bordi e margin-top ereditati */
+    border-bottom: 1px solid #ccc !important;
+    border-left: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    margin-top: 0 !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  /* placeholder (se vuoi passare a placeholder nativo invece del value-onfocus) */
+  #af-form-776188353 .af-body input.text::-webkit-input-placeholder { color: #999; }
+  #af-form-776188353 .af-body input.text:-ms-input-placeholder { color: #999; }
+  #af-form-776188353 .af-body input.text::placeholder { color: #999; }
+
+  /* submit button */
+  #af-form-776188353 input.submit {
+    width: 100%;
+    background: #FFA500;                /* arancione pieno */
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 0 !important;           /* elimina eventuali margin spuria */
+  }
+  #af-form-776188353 input.submit:hover {
+    background: #e67e22;                /* arancione scuro al passaggio */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+
+  /* rimuovi spazi extra intorno alle label “vuote” */
+  #af-form-776188353 .af-body .previewLabel {
+    display: none;
+  }
           
           <!-- Fallback form for preview - This will be hidden when AWeber form loads -->
           
